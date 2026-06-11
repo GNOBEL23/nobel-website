@@ -1,11 +1,426 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
-<Layout>
-	<Welcome />
-</Layout>
+<BaseLayout
+  title="მთავარი"
+  description="სკოლა ნობელი — მენტალური არითმეტიკა და ემოციური ინტელექტი"
+>
+
+  <!-- NAVBAR -->
+  <nav class="bg-[#FAF8F5]/95 backdrop-blur-sm border-b border-[#E8E4DE] sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="/">
+  <img src="/logo.png" alt="სკოლა ნობელი" class="h-20 w-auto" />
+</a>
+      <div class="hidden md:flex items-center gap-8">
+        <a href="/" class="text-[#2C2C2C] hover:text-[#1B3A5C] font-medium transition-colors text-sm">მთავარი</a>
+        <a href="/about" class="text-[#2C2C2C] hover:text-[#1B3A5C] font-medium transition-colors text-sm">ჩვენ შესახებ</a>
+        <a href="/courses" class="text-[#2C2C2C] hover:text-[#1B3A5C] font-medium transition-colors text-sm">კურსები</a>
+        <a href="/events" class="text-[#2C2C2C] hover:text-[#1B3A5C] font-medium transition-colors text-sm">ღონისძიებები</a>
+        <a href="/blog" class="text-[#2C2C2C] hover:text-[#1B3A5C] font-medium transition-colors text-sm">ბლოგი</a>
+        <a href="/contact" class="text-[#2C2C2C] hover:text-[#1B3A5C] font-medium transition-colors text-sm">კონტაქტი</a>
+      </div>
+      <a href="/trial-class" class="bg-[#C0392B] text-white px-5 py-2.5 rounded-lg font-medium hover:bg-[#A93226] transition-all hover:shadow-lg text-sm">
+        უფასო გაკვეთილი →
+      </a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="min-h-[92vh] bg-gradient-to-br from-[#FAF8F5] via-[#F0EDE8] to-[#E8F0F8] flex items-center relative overflow-hidden">
+    <div class="absolute top-0 right-0 w-96 h-96 bg-[#1B3A5C]/5 rounded-full -translate-y-1/2 translate-x-1/2"></div>
+    <div class="absolute bottom-0 left-0 w-64 h-64 bg-[#4A7C59]/10 rounded-full translate-y-1/2 -translate-x-1/2"></div>
+    <div class="max-w-7xl mx-auto px-6 w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center py-20 relative z-10">
+      <div class="flex flex-col gap-6 reveal-left">
+        <h1 class="text-4xl md:text-6xl font-bold text-[#1B3A5C] leading-tight">
+          [სათაური — კონტენტ კრეატორისგან]
+        </h1>
+        <p class="text-lg text-[#5A5A5A] leading-relaxed max-w-md">
+          [ქვესათაური — კონტენტ კრეატორისგან]
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 pt-2">
+          <a href="/trial-class" class="bg-[#C0392B] text-white px-8 py-4 rounded-xl font-semibold text-center hover:bg-[#A93226] transition-all hover:shadow-xl hover:-translate-y-0.5 text-lg">
+            უფასო საცდელი გაკვეთილი →
+          </a>
+          <a href="/courses" class="border-2 border-[#1B3A5C] text-[#1B3A5C] px-8 py-4 rounded-xl font-semibold text-center hover:bg-[#1B3A5C] hover:text-white transition-all text-lg">
+            კურსები
+          </a>
+        </div>
+        <div class="flex gap-8 pt-4 border-t border-[#E8E4DE]">
+          <div>
+            <div class="text-2xl font-bold text-[#1B3A5C]">5000+</div>
+            <div class="text-sm text-[#6B6B6B]">მოსწავლე</div>
+          </div>
+          <div>
+            <div class="text-2xl font-bold text-[#1B3A5C]">8+</div>
+            <div class="text-sm text-[#6B6B6B]">წელი</div>
+          </div>
+          <div>
+            <div class="text-2xl font-bold text-[#1B3A5C]">10+</div>
+            <div class="text-sm text-[#6B6B6B]">ოლიმპიადა</div>
+          </div>
+        </div>
+      </div>
+      <div class="relative reveal-right">
+        <div class="bg-gradient-to-br from-[#1B3A5C]/10 to-[#4A7C59]/10 rounded-3xl aspect-[4/5] flex items-center justify-center border-2 border-dashed border-[#1B3A5C]/20">
+          <span class="text-[#1B3A5C]/40 text-xl font-medium">ფოტო</span>
+        </div>
+        <div class="absolute -bottom-4 -left-4 bg-white rounded-2xl shadow-xl p-4 flex items-center gap-3">
+          <div class="w-10 h-10 bg-[#4A7C59] rounded-xl flex items-center justify-center">
+            <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+            </svg>
+          </div>
+          <div>
+            <div class="text-sm font-bold text-[#1B3A5C]">საუკეთესო შეფასება</div>
+            <div class="text-xs text-[#6B6B6B]">მშობლების მიხედვით</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BENEFITS — dark bg with dim abacus pattern, cards scale in -->
+  <section class="py-24 bg-[#1B3A5C] relative overflow-hidden">
+    <div class="absolute inset-0 opacity-[0.04] pointer-events-none select-none" aria-hidden="true">
+      <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <pattern id="abacus" x="0" y="0" width="120" height="160" patternUnits="userSpaceOnUse">
+            <rect x="10" y="10" width="100" height="140" rx="4" fill="none" stroke="white" stroke-width="3"/>
+            <line x1="30" y1="10" x2="30" y2="150" stroke="white" stroke-width="2"/>
+            <line x1="50" y1="10" x2="50" y2="150" stroke="white" stroke-width="2"/>
+            <line x1="70" y1="10" x2="70" y2="150" stroke="white" stroke-width="2"/>
+            <line x1="90" y1="10" x2="90" y2="150" stroke="white" stroke-width="2"/>
+            <circle cx="30" cy="35" r="8" fill="white"/>
+            <circle cx="50" cy="45" r="8" fill="white"/>
+            <circle cx="70" cy="35" r="8" fill="white"/>
+            <circle cx="90" cy="55" r="8" fill="white"/>
+            <circle cx="30" cy="75" r="8" fill="white"/>
+            <circle cx="50" cy="85" r="8" fill="white"/>
+            <circle cx="70" cy="95" r="8" fill="white"/>
+            <circle cx="90" cy="75" r="8" fill="white"/>
+            <circle cx="30" cy="120" r="8" fill="white"/>
+            <circle cx="50" cy="110" r="8" fill="white"/>
+            <circle cx="70" cy="125" r="8" fill="white"/>
+            <circle cx="90" cy="115" r="8" fill="white"/>
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#abacus)"/>
+      </svg>
+    </div>
+    <div class="max-w-7xl mx-auto px-6 relative z-10">
+      <div class="text-center mb-16 reveal-up">
+        <span class="text-[#A8C4D8] font-semibold text-sm uppercase tracking-widest">რატომ ნობელი</span>
+        <h2 class="text-3xl md:text-4xl font-bold text-white mt-3 mb-4">
+          ნობელის არჩევის დადებითი შედეგები
+        </h2>
+        <p class="text-[#A8C4D8] text-lg max-w-2xl mx-auto">
+          [ბენეფიტების ქვესათაური — კონტენტ კრეატორისგან]
+        </p>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {[
+          { color: 'bg-white/10 border-white/20 hover:bg-white/15', num: '01' },
+          { color: 'bg-[#4A7C59]/30 border-[#4A7C59]/40 hover:bg-[#4A7C59]/40', num: '02' },
+          { color: 'bg-white/10 border-white/20 hover:bg-white/15', num: '03' },
+          { color: 'bg-[#4A7C59]/30 border-[#4A7C59]/40 hover:bg-[#4A7C59]/40', num: '04' },
+          { color: 'bg-white/10 border-white/20 hover:bg-white/15', num: '05' },
+          { color: 'bg-[#4A7C59]/30 border-[#4A7C59]/40 hover:bg-[#4A7C59]/40', num: '06' },
+        ].map((b, idx) => (
+          <div
+            class={`${b.color} rounded-2xl p-8 flex flex-col gap-4 border transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl reveal-scale`}
+            style={`transition-delay: ${idx * 80}ms`}
+          >
+            <div class="w-12 h-12 rounded-xl bg-white/20 flex items-center justify-center font-bold text-white text-lg">
+              {b.num}
+            </div>
+            <h3 class="text-xl font-bold text-white">[ბენეფიტი {b.num}]</h3>
+            <p class="text-[#A8C4D8] leading-relaxed">[აღწერა — კონტენტ კრეატორისგან]</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS — heading from right, cards pop up -->
+  <section class="py-24 bg-[#FAF8F5] relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6 relative z-10">
+      <div class="text-center mb-16 reveal-right">
+        <span class="text-[#4A7C59] font-semibold text-sm uppercase tracking-widest">ჩვენი შედეგები</span>
+        <h2 class="text-3xl md:text-4xl font-bold text-[#1B3A5C] mt-3">
+          ინფორმაცია რიცხვებში
+        </h2>
+        <p class="text-[#6B6B6B] mt-3 max-w-xl mx-auto">
+          საერთაშორისო ასპარეზი, მოსწავლეები, ოლიმპიადა
+        </p>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-3xl mx-auto">
+        {[
+          { value: 5000, label: 'მოსწავლე', accent: '#1B3A5C' },
+          { value: 8, label: 'წელი', accent: '#4A7C59' },
+          { value: 10, label: 'ოლიმპიადა', accent: '#4A7C59' },
+        ].map((s, idx) => (
+          <div
+            class="bg-white rounded-2xl p-8 text-center border border-[#E8E4DE] hover:shadow-lg transition-all reveal-up"
+            style={`transition-delay: ${idx * 80}ms`}
+          >
+            <div class="text-5xl font-bold mb-2 stat-number" data-target={s.value} style={`color: ${s.accent}`}>0</div>
+            <div class="text-[#6B6B6B] font-medium text-sm">{s.label}</div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT — video from left, text from right -->
+  <section class="py-24 bg-white relative overflow-hidden">
+    <div class="absolute inset-0 opacity-[0.025] pointer-events-none select-none" aria-hidden="true">
+      <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <pattern id="abacus2" x="0" y="0" width="120" height="160" patternUnits="userSpaceOnUse">
+            <rect x="10" y="10" width="100" height="140" rx="4" fill="none" stroke="#1B3A5C" stroke-width="3"/>
+            <line x1="30" y1="10" x2="30" y2="150" stroke="#1B3A5C" stroke-width="2"/>
+            <line x1="50" y1="10" x2="50" y2="150" stroke="#1B3A5C" stroke-width="2"/>
+            <line x1="70" y1="10" x2="70" y2="150" stroke="#1B3A5C" stroke-width="2"/>
+            <line x1="90" y1="10" x2="90" y2="150" stroke="#1B3A5C" stroke-width="2"/>
+            <circle cx="30" cy="35" r="8" fill="#1B3A5C"/>
+            <circle cx="50" cy="45" r="8" fill="#1B3A5C"/>
+            <circle cx="70" cy="35" r="8" fill="#1B3A5C"/>
+            <circle cx="90" cy="55" r="8" fill="#1B3A5C"/>
+            <circle cx="30" cy="75" r="8" fill="#1B3A5C"/>
+            <circle cx="50" cy="85" r="8" fill="#1B3A5C"/>
+            <circle cx="70" cy="95" r="8" fill="#1B3A5C"/>
+            <circle cx="90" cy="75" r="8" fill="#1B3A5C"/>
+            <circle cx="30" cy="120" r="8" fill="#1B3A5C"/>
+            <circle cx="50" cy="110" r="8" fill="#1B3A5C"/>
+            <circle cx="70" cy="125" r="8" fill="#1B3A5C"/>
+            <circle cx="90" cy="115" r="8" fill="#1B3A5C"/>
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#abacus2)"/>
+      </svg>
+    </div>
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-16 items-center relative z-10">
+      <div class="relative reveal-left">
+        <div class="bg-gradient-to-br from-[#1B3A5C]/10 to-[#4A7C59]/10 rounded-3xl aspect-video flex items-center justify-center border border-[#E8E4DE] overflow-hidden group cursor-pointer">
+          <span class="text-[#1B3A5C]/30 text-lg absolute">ვიდეო</span>
+          <div class="w-16 h-16 bg-[#1B3A5C] rounded-full flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform relative z-10">
+            <svg class="w-6 h-6 text-white ml-1" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M8 5v14l11-7z"/>
+            </svg>
+          </div>
+        </div>
+        <div class="absolute -top-4 -right-4 bg-[#4A7C59] text-white rounded-2xl p-4 shadow-xl">
+          <div class="text-2xl font-bold">8+</div>
+          <div class="text-xs opacity-90">წელი გამოცდილება</div>
+        </div>
+      </div>
+      <div class="flex flex-col gap-6 reveal-right">
+        <span class="text-[#4A7C59] font-semibold text-sm uppercase tracking-widest">ჩვენ შესახებ</span>
+        <h2 class="text-3xl md:text-4xl font-bold text-[#1B3A5C]">
+          რა არის სკოლა ნობელი?
+        </h2>
+        <p class="text-[#6B6B6B] text-lg leading-relaxed">
+          [რა არის ნობელი? — კონტენტ კრეატორისგან]
+        </p>
+        <p class="text-[#6B6B6B] text-lg leading-relaxed">
+          [რით განსხვავდება სხვა კურსებისგან? — კონტენტ კრეატორისგან]
+        </p>
+        <a href="/about" class="text-[#2E6DA4] font-semibold hover:underline mt-2 w-fit">გაიგე მეტი →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS — heading pops up, cards scale in -->
+  <section class="py-24 bg-[#FAF8F5]">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-16 reveal-up">
+        <span class="text-[#4A7C59] font-semibold text-sm uppercase tracking-widest">გამოხმაურებები</span>
+        <h2 class="text-3xl md:text-4xl font-bold text-[#1B3A5C] mt-3">
+          მშობლები ჩვენ შესახებ
+        </h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        {[1,2,3].map((i) => (
+          <div
+            class="bg-white rounded-2xl p-8 flex flex-col gap-4 border border-[#E8E4DE] hover:shadow-lg transition-all reveal-scale"
+            style={`transition-delay: ${(i-1) * 100}ms`}
+          >
+            <div class="flex gap-1">
+              {[1,2,3,4,5].map(() => (
+                <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                </svg>
+              ))}
+            </div>
+            <p class="text-[#6B6B6B] leading-relaxed italic">
+              "[გამოხმაურება {i} — მშობლისგან]"
+            </p>
+            <div class="flex items-center gap-3 pt-4 border-t border-[#E8E4DE]">
+              <div class="w-10 h-10 bg-[#1B3A5C]/10 rounded-full flex items-center justify-center text-[#1B3A5C] font-bold text-sm">მ</div>
+              <div>
+                <div class="font-semibold text-[#1B3A5C] text-sm">[მშობლის სახელი]</div>
+                <div class="text-xs text-[#6B6B6B]">[მოსწავლის სახელი]-ის მშობელი</div>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ — heading from right, items from left -->
+  <section class="py-24 bg-white">
+    <div class="max-w-3xl mx-auto px-6">
+      <div class="text-center mb-16 reveal-right">
+        <span class="text-[#4A7C59] font-semibold text-sm uppercase tracking-widest">FAQ</span>
+        <h2 class="text-3xl md:text-4xl font-bold text-[#1B3A5C] mt-3">
+          ხშირად დასმული კითხვები
+        </h2>
+      </div>
+      <div class="flex flex-col gap-3">
+        {[1,2,3,4,5].map((i) => (
+          <details
+            class="bg-[#FAF8F5] rounded-2xl border border-[#E8E4DE] group overflow-hidden reveal-left"
+            style={`transition-delay: ${(i-1) * 60}ms`}
+          >
+            <summary class="px-6 py-5 font-semibold text-[#1B3A5C] cursor-pointer list-none flex items-center justify-between hover:bg-[#F0EDE8] transition-colors">
+              [კითხვა {i} — კონტენტ კრეატორისგან]
+              <span class="text-2xl text-[#4A7C59] transition-transform duration-300 group-open:rotate-45 flex-shrink-0 ml-4">+</span>
+            </summary>
+            <div class="px-6 pb-6 pt-4 text-[#6B6B6B] leading-relaxed border-t border-[#E8E4DE]">
+              [პასუხი {i} — კონტენტ კრეატორისგან]
+            </div>
+          </details>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA — pops up -->
+  <section class="py-24 bg-gradient-to-br from-[#1B3A5C] to-[#2E6DA4] relative overflow-hidden">
+    <div class="absolute top-0 right-0 w-96 h-96 bg-white/5 rounded-full -translate-y-1/2 translate-x-1/2"></div>
+    <div class="max-w-3xl mx-auto px-6 text-center relative z-10 flex flex-col gap-6 items-center reveal-scale">
+      <span class="bg-white/20 text-white text-sm font-medium px-4 py-2 rounded-full">შეკითხვები?</span>
+      <h2 class="text-3xl md:text-5xl font-bold text-white">
+        დაიწყე შენი შვილის<br/>განვითარება დღეს
+      </h2>
+      <p class="text-[#A8C4D8] text-lg max-w-xl">
+        დაგვიკავშირდი და ჩვენ გიპასუხებთ ყველა შეკითხვაზე
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4">
+        <a href="/trial-class" class="bg-[#C0392B] text-white px-8 py-4 rounded-xl font-semibold hover:bg-[#A93226] transition-all hover:shadow-xl hover:-translate-y-0.5 text-lg">
+          უფასო საცდელი გაკვეთილი →
+        </a>
+        <a href="/contact" class="bg-white/10 border-2 border-white/30 text-white px-8 py-4 rounded-xl font-semibold hover:bg-white/20 transition-all text-lg">
+          დაგვიკავშირდით
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-[#0F2236] text-white py-16">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-10">
+      <div class="md:col-span-2">
+        <div class="text-xl font-bold mb-4">სკოლა ნობელი</div>
+        <p class="text-[#A8C4D8] text-sm leading-relaxed max-w-xs">
+          [მოკლე აღწერა — კონტენტ კრეატორისგან]
+        </p>
+        <div class="flex gap-3 mt-6">
+          <a href="#" target="_blank" rel="noopener" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-[#1877F2] transition-colors">
+            <svg class="w-5 h-5 fill-white" viewBox="0 0 24 24">
+              <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+            </svg>
+          </a>
+          <a href="#" target="_blank" rel="noopener" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-[#E1306C] transition-colors">
+            <svg class="w-5 h-5 fill-white" viewBox="0 0 24 24">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+            </svg>
+          </a>
+          <a href="#" target="_blank" rel="noopener" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-black transition-colors">
+            <svg class="w-5 h-5 fill-white" viewBox="0 0 24 24">
+              <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/>
+            </svg>
+          </a>
+          <a href="#" target="_blank" rel="noopener" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-[#FF0000] transition-colors">
+            <svg class="w-5 h-5 fill-white" viewBox="0 0 24 24">
+              <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div>
+        <div class="font-semibold mb-4 text-sm uppercase tracking-widest text-[#A8C4D8]">ნავიგაცია</div>
+        <div class="flex flex-col gap-2 text-[#A8C4D8] text-sm">
+          {[['/', 'მთავარი'], ['/about', 'ჩვენ შესახებ'], ['/courses', 'კურსები'], ['/events', 'ღონისძიებები'], ['/blog', 'ბლოგი'], ['/contact', 'კონტაქტი']].map(([href, label]) => (
+            <a href={href} class="hover:text-white transition-colors">{label}</a>
+          ))}
+        </div>
+      </div>
+      <div>
+        <div class="font-semibold mb-4 text-sm uppercase tracking-widest text-[#A8C4D8]">კონტაქტი</div>
+        <div class="flex flex-col gap-3 text-[#A8C4D8] text-sm">
+          <a href="tel:+995551145362" class="hover:text-white transition-colors">+995 551 145 362</a>
+          <a href="tel:+995551145360" class="hover:text-white transition-colors">+995 551 145 360</a>
+          <a href="mailto:[email]" class="hover:text-white transition-colors">[ელ-ფოსტა]</a>
+          <p>[მისამართი]</p>
+        </div>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto px-6 mt-12 pt-6 border-t border-white/10 text-[#A8C4D8] text-sm flex flex-col md:flex-row justify-between gap-2">
+      <span>© 2025 სკოლა ნობელი. ყველა უფლება დაცულია.</span>
+      <a href="/trial-class" class="text-[#C0392B] hover:underline font-medium">უფასო საცდელი გაკვეთილი →</a>
+    </div>
+  </footer>
+
+  <style>
+    .reveal-up, .reveal-left, .reveal-right, .reveal-scale {
+  opacity: 0;
+  transition: opacity 3.1s cubic-bezier(0.22, 1, 0.36, 1), transform 1.1s cubic-bezier(0.22, 1, 0.36, 1);
+
+    }
+    .reveal-up    { transform: translateY(50px); }
+    .reveal-left  { transform: translateX(-60px); }
+    .reveal-right { transform: translateX(60px); }
+    .reveal-scale { transform: scale(0.92); }
+    .revealed {
+      opacity: 1 !important;
+      transform: none !important;
+    }
+  </style>
+
+  <script>
+    const revealEls = document.querySelectorAll('.reveal-up, .reveal-left, .reveal-right, .reveal-scale');
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('revealed');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.3 });
+    revealEls.forEach(el => revealObserver.observe(el));
+
+    const statNumbers = document.querySelectorAll('.stat-number');
+    const statObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const el = entry.target as HTMLElement;
+          const target = parseInt(el.dataset.target || '0');
+          let current = 0;
+          const step = Math.ceil(target / 60);
+          const timer = setInterval(() => {
+            current += step;
+            if (current >= target) { current = target; clearInterval(timer); }
+            el.textContent = current + '+';
+          }, 20);
+          statObserver.unobserve(el);
+        }
+      });
+    }, { threshold: 0.5 });
+    statNumbers.forEach(el => statObserver.observe(el));
+  </script>
+
+</BaseLayout>
