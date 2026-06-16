@@ -6,88 +6,88 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   title="მთავარი"
   description="სკოლა ნობელი — მენტალური არითმეტიკა და ემოციური ინტელექტი"
   >
-    <!-- HERO -->
-  <section class="min-h-[92vh] bg-gradient-to-br from-[#FAF8F5] via-[#F0EDE8] to-[#E8F0F8] flex items-center relative overflow-hidden">
-    <div class="absolute top-0 right-0 w-96 h-96 bg-[#1B3A5C]/5 rounded-full -translate-y-1/2 translate-x-1/2"></div>
-    <div class="absolute bottom-0 left-0 w-64 h-64 bg-[#4A7C59]/10 rounded-full translate-y-1/2 -translate-x-1/2"></div>
-    <div class="max-w-7xl mx-auto px-6 w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center py-20 relative z-10">
-      <div class="flex flex-col gap-6 reveal-left">
-        <h1 class="text-4xl md:text-6xl font-bold text-[#1B3A5C] leading-tight">
-          [სათაური — კონტენტ კრეატორისგან]
-        </h1>
-        <p class="text-lg text-[#5A5A5A] leading-relaxed max-w-md">
-          [ქვესათაური — კონტენტ კრეატორისგან]
-        </p>
-        <div class="flex flex-col sm:flex-row gap-4 pt-2">
-          <a href="/trial-class" class="bg-[#C0392B] text-white px-8 py-4 rounded-xl font-semibold text-center hover:bg-[#A93226] transition-all hover:shadow-xl hover:-translate-y-0.5 text-lg">
-            უფასო საცდელი გაკვეთილი →
-          </a>
-          <a href="/courses" class="border-2 border-[#1B3A5C] text-[#1B3A5C] px-8 py-4 rounded-xl font-semibold text-center hover:bg-[#1B3A5C] hover:text-white transition-all text-lg">
-            კურსები
-          </a>
-        </div>
-        <div class="flex gap-8 pt-4 border-t border-[#E8E4DE]">
-          <div>
-            <div class="text-2xl font-bold text-[#1B3A5C]">5000+</div>
-            <div class="text-sm text-[#6B6B6B]">მოსწავლე</div>
-          </div>
-          <div>
-            <div class="text-2xl font-bold text-[#1B3A5C]">8+</div>
-            <div class="text-sm text-[#6B6B6B]">წელი</div>
-          </div>
-          <div>
-            <div class="text-2xl font-bold text-[#1B3A5C]">10+</div>
-            <div class="text-sm text-[#6B6B6B]">ოლიმპიადა</div>
-          </div>
-        </div>
-      </div>
-      <div class="relative reveal-right">
-        <div class="bg-gradient-to-br from-[#1B3A5C]/10 to-[#4A7C59]/10 rounded-3xl aspect-[4/5] flex items-center justify-center border-2 border-dashed border-[#1B3A5C]/20">
-          <span class="text-[#1B3A5C]/40 text-xl font-medium">ფოტო</span>
-        </div>
-        <div class="absolute -bottom-4 -left-4 bg-white rounded-2xl shadow-xl p-4 flex items-center gap-3">
-          <div class="w-10 h-10 bg-[#4A7C59] rounded-xl flex items-center justify-center">
-            <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
-              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-            </svg>
-          </div>
-          <div>
-            <div class="text-sm font-bold text-[#1B3A5C]">საუკეთესო შეფასება</div>
-            <div class="text-xs text-[#6B6B6B]">მშობლების მიხედვით</div>
-          </div>
-        </div>
+   <!-- HERO -->
+<section class="flex flex-col md:flex-row">
+
+  <!-- LEFT — Mental Arithmetic -->
+  <div class="flex-1 bg-gradient-to-br from-[#FAF8F5] via-[#F0EDE8] to-[#E8F0F8] flex flex-col justify-center px-10 md:px-16 py-24 relative overflow-hidden">
+    <div class="absolute top-0 right-0 w-72 h-72 bg-[#1B3A5C]/5 rounded-full -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
+    <div class="absolute bottom-0 left-0 w-48 h-48 bg-[#4A7C59]/8 rounded-full translate-y-1/2 -translate-x-1/2 pointer-events-none"></div>
+    <div class="flex flex-col gap-6 relative z-10 max-w-sm">
+      <span class="text-[#4A7C59] font-semibold text-xs uppercase tracking-widest">კურსი</span>
+      <h2 class="text-4xl md:text-5xl font-bold text-[#1B3A5C] leading-tight">
+        მენტალური<br/>არითმეტიკა
+      </h2>
+      <p class="text-[#5A5A5A] leading-relaxed text-sm md:text-base">
+        [ინფო ტექსტი — კონტენტ კრეატორისგან]
+      </p>
+      <div class="flex flex-col gap-3 pt-2">
+        <a href="/trial-class" class="bg-[#C0392B] text-white px-6 py-3.5 rounded-xl font-semibold text-center hover:bg-[#A93226] transition-all hover:shadow-lg text-sm">
+          უფასო საცდელი გაკვეთილი →
+        </a>
+        <a href="/courses/mental-arithmetic" class="flex items-center gap-2 text-[#1B3A5C] font-semibold hover:text-[#2E6DA4] transition-colors text-sm w-fit">
+          იხილეთ ვრცლად
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+          </svg>
+        </a>
       </div>
     </div>
-  </section>
+  </div>
+
+  <!-- DIVIDER -->
+  <div class="w-px bg-[#E0D5D0] hidden md:block flex-shrink-0"></div>
+  <div class="h-px bg-[#E0D5D0] md:hidden"></div>
+
+  <!-- RIGHT — Emotional Intelligence -->
+  <div class="flex-1 bg-gradient-to-br from-[#FAF5F7] via-[#F5E8EE] to-[#EDD6DF] flex flex-col justify-center px-10 md:px-16 py-24 relative overflow-hidden">
+    <div class="absolute top-0 left-0 w-72 h-72 bg-[#6B2040]/5 rounded-full -translate-y-1/2 -translate-x-1/2 pointer-events-none"></div>
+    <div class="absolute bottom-0 right-0 w-48 h-48 bg-[#9B5A6A]/8 rounded-full translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
+    <div class="flex flex-col gap-6 relative z-10 max-w-sm">
+      <span class="text-[#9B5A6A] font-semibold text-xs uppercase tracking-widest">კურსი</span>
+      <h2 class="text-4xl md:text-5xl font-bold text-[#5C1B3A] leading-tight">
+        ემოციური<br/>ინტელექტი
+      </h2>
+      <p class="text-[#5A5A5A] leading-relaxed text-sm md:text-base">
+        [ინფო ტექსტი — კონტენტ კრეატორისგან]
+      </p>
+      <div class="flex flex-col gap-3 pt-2">
+        <a href="/trial-class" class="bg-[#6B2040] text-white px-6 py-3.5 rounded-xl font-semibold text-center hover:bg-[#5A1A35] transition-all hover:shadow-lg text-sm">
+          უფასო საცდელი გაკვეთილი →
+        </a>
+        <a href="/courses/emotional-intelligence" class="flex items-center gap-2 text-[#6B2040] font-semibold hover:text-[#9B5A6A] transition-colors text-sm w-fit">
+          იხილეთ ვრცლად
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+</section>
 
   <!-- BENEFITS — dark bg with dim abacus pattern, cards scale in -->
   <section class="py-24 bg-[#1B3A5C] relative overflow-hidden">
-    <div class="absolute inset-0 opacity-[0.04] pointer-events-none select-none" aria-hidden="true">
-      <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
-        <defs>
-          <pattern id="abacus" x="0" y="0" width="120" height="160" patternUnits="userSpaceOnUse">
-            <rect x="10" y="10" width="100" height="140" rx="4" fill="none" stroke="white" stroke-width="3"/>
-            <line x1="30" y1="10" x2="30" y2="150" stroke="white" stroke-width="2"/>
-            <line x1="50" y1="10" x2="50" y2="150" stroke="white" stroke-width="2"/>
-            <line x1="70" y1="10" x2="70" y2="150" stroke="white" stroke-width="2"/>
-            <line x1="90" y1="10" x2="90" y2="150" stroke="white" stroke-width="2"/>
-            <circle cx="30" cy="35" r="8" fill="white"/>
-            <circle cx="50" cy="45" r="8" fill="white"/>
-            <circle cx="70" cy="35" r="8" fill="white"/>
-            <circle cx="90" cy="55" r="8" fill="white"/>
-            <circle cx="30" cy="75" r="8" fill="white"/>
-            <circle cx="50" cy="85" r="8" fill="white"/>
-            <circle cx="70" cy="95" r="8" fill="white"/>
-            <circle cx="90" cy="75" r="8" fill="white"/>
-            <circle cx="30" cy="120" r="8" fill="white"/>
-            <circle cx="50" cy="110" r="8" fill="white"/>
-            <circle cx="70" cy="125" r="8" fill="white"/>
-            <circle cx="90" cy="115" r="8" fill="white"/>
-          </pattern>
-        </defs>
-        <rect width="100%" height="100%" fill="url(#abacus)"/>
-      </svg>
-    </div>
+    <!-- Gradient blobs -->
+<div class="absolute inset-0 overflow-hidden pointer-events-none">
+  <!-- top left — large teal -->
+  <div class="absolute -top-20 -left-20 w-96 h-96 rounded-full bg-[#4A7C59] opacity-20 blur-[120px]"></div>
+  <!-- top right — mid blue -->
+  <div class="absolute -top-10 right-1/4 w-72 h-72 rounded-full bg-[#2E6DA4] opacity-25 blur-[100px]"></div>
+  <!-- center — warm accent -->
+  <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[300px] rounded-full bg-[#1a5276] opacity-30 blur-[140px]"></div>
+  <!-- center left — teal -->
+  <div class="absolute top-1/3 -left-10 w-64 h-64 rounded-full bg-[#4A7C59] opacity-15 blur-[90px]"></div>
+  <!-- center right — blue -->
+  <div class="absolute bottom-1/3 -right-10 w-80 h-80 rounded-full bg-[#2E6DA4] opacity-20 blur-[110px]"></div>
+  <!-- bottom left — blue -->
+  <div class="absolute -bottom-20 left-1/4 w-72 h-72 rounded-full bg-[#2E6DA4] opacity-20 blur-[100px]"></div>
+  <!-- bottom right — teal -->
+  <div class="absolute -bottom-10 -right-20 w-96 h-96 rounded-full bg-[#4A7C59] opacity-15 blur-[120px]"></div>
+  <!-- small punchy center-top -->
+  <div class="absolute top-10 left-1/2 w-40 h-40 rounded-full bg-[#5B8FA8] opacity-20 blur-[80px]"></div>
+</div>
     <div class="max-w-7xl mx-auto px-6 relative z-10">
       <div class="text-center mb-16 reveal-up">
         <span class="text-[#A8C4D8] font-semibold text-sm uppercase tracking-widest">რატომ ნობელი</span>

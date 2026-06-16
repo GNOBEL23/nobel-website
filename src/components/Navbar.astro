@@ -2,49 +2,237 @@
 ---
 <nav class="bg-[#FAF8F5]/95 backdrop-blur-sm border-b border-[#E8E4DE] sticky top-0 z-50">
   <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+
     <a href="/">
       <img src="/logo.png" alt="სკოლა ნობელი" class="h-14 w-auto" />
     </a>
+
+    <!-- Desktop nav -->
     <div class="hidden md:flex items-center gap-8">
       <a href="/" class="text-[#2C2C2C] hover:text-[#1B3A5C] font-medium transition-colors text-sm">მთავარი</a>
+      <a href="/courses/mental-arithmetic" class="flex items-center gap-2 px-4 py-2 rounded-lg bg-[#1B3A5C]/10 hover:bg-[#1B3A5C] text-[#1B3A5C] hover:text-white font-medium text-sm transition-all duration-200">
+        <div class="w-2 h-2 rounded-full bg-[#1B3A5C] flex-shrink-0"></div>
+        მენტალური არითმეტიკა
+      </a>
+      <a href="/courses/emotional-intelligence" class="flex items-center gap-2 px-4 py-2 rounded-lg bg-[#6B2040]/10 hover:bg-[#6B2040] text-[#6B2040] hover:text-white font-medium text-sm transition-all duration-200">
+        <div class="w-2 h-2 rounded-full bg-[#6B2040] flex-shrink-0"></div>
+        ემოციური ინტელექტი
+      </a>
 
-      <!-- Courses dropdown -->
+      <!-- ჩვენ შესახებ dropdown -->
       <div class="relative group">
         <button class="flex items-center gap-1 text-[#2C2C2C] hover:text-[#1B3A5C] font-medium text-sm transition-colors">
-          კურსები
+          ჩვენ შესახებ
           <svg class="w-4 h-4 transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
           </svg>
         </button>
-        <div class="absolute top-full left-1/2 -translate-x-1/2 mt-3 w-56 bg-white rounded-xl shadow-xl border border-[#E8E4DE] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 translate-y-1 group-hover:translate-y-0 z-50">
+        <div class="absolute top-full left-1/2 -translate-x-1/2 mt-3 w-52 bg-white rounded-xl shadow-xl border border-[#E8E4DE] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 translate-y-1 group-hover:translate-y-0 z-50">
           <div class="absolute -top-2 left-1/2 -translate-x-1/2 w-4 h-4 bg-white border-l border-t border-[#E8E4DE] rotate-45"></div>
-          <a href="/courses/mental-arithmetic" class="flex items-center gap-3 px-5 py-4 text-sm text-[#2C2C2C] hover:bg-[#FAF8F5] hover:text-[#1B3A5C] rounded-t-xl transition-colors font-medium">
+          <a href="/about" class="flex items-center gap-3 px-5 py-4 text-sm text-[#2C2C2C] hover:bg-[#FAF8F5] hover:text-[#1B3A5C] rounded-t-xl transition-colors font-medium">
             <div class="w-8 h-8 bg-[#1B3A5C]/10 rounded-lg flex items-center justify-center flex-shrink-0">
               <svg class="w-4 h-4 text-[#1B3A5C]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
               </svg>
             </div>
-            მენტალური არითმეტიკა
+            რა არის ნობელი?
           </a>
           <div class="h-px bg-[#E8E4DE] mx-4"></div>
-          <a href="/courses/emotional-intelligence" class="flex items-center gap-3 px-5 py-4 text-sm text-[#2C2C2C] hover:bg-[#FAF8F5] hover:text-[#1B3A5C] rounded-b-xl transition-colors font-medium">
+          <a href="/events" class="flex items-center gap-3 px-5 py-4 text-sm text-[#2C2C2C] hover:bg-[#FAF8F5] hover:text-[#1B3A5C] transition-colors font-medium">
             <div class="w-8 h-8 bg-[#4A7C59]/10 rounded-lg flex items-center justify-center flex-shrink-0">
               <svg class="w-4 h-4 text-[#4A7C59]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
               </svg>
             </div>
-            ემოციური ინტელექტი
+            ღონისძიებები
+          </a>
+          <div class="h-px bg-[#E8E4DE] mx-4"></div>
+          <a href="/blog" class="flex items-center gap-3 px-5 py-4 text-sm text-[#2C2C2C] hover:bg-[#FAF8F5] hover:text-[#1B3A5C] rounded-b-xl transition-colors font-medium">
+            <div class="w-8 h-8 bg-[#2E6DA4]/10 rounded-lg flex items-center justify-center flex-shrink-0">
+              <svg class="w-4 h-4 text-[#2E6DA4]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+              </svg>
+            </div>
+            ბლოგი
           </a>
         </div>
       </div>
 
-      <a href="/about" class="text-[#2C2C2C] hover:text-[#1B3A5C] font-medium transition-colors text-sm">ჩვენ შესახებ</a>
-      <a href="/events" class="text-[#2C2C2C] hover:text-[#1B3A5C] font-medium transition-colors text-sm">ღონისძიებები</a>
-      <a href="/blog" class="text-[#2C2C2C] hover:text-[#1B3A5C] font-medium transition-colors text-sm">ბლოგი</a>
       <a href="/contact" class="text-[#2C2C2C] hover:text-[#1B3A5C] font-medium transition-colors text-sm">კონტაქტი</a>
     </div>
-    <a href="/trial-class" class="bg-[#C0392B] text-white px-5 py-2.5 rounded-lg font-medium hover:bg-[#A93226] transition-all hover:shadow-lg text-sm">
-      უფასო გაკვეთილი →
-    </a>
+
+    <!-- Right side -->
+    <div class="flex items-center gap-2">
+      <a href="/trial-class" class="hidden md:inline-block bg-[#C0392B] text-white px-5 py-2.5 rounded-lg font-medium hover:bg-[#A93226] transition-all hover:shadow-lg text-sm">
+        უფასო გაკვეთილი →
+      </a>
+      <!-- Hamburger button — mobile only -->
+      <button
+        id="hamburger-btn"
+        class="md:hidden flex flex-col justify-center items-center w-10 h-10 rounded-lg hover:bg-[#E8E4DE]/80 transition-colors"
+        style="gap: 5px"
+        aria-label="მენიუ"
+        aria-expanded="false"
+      >
+        <span class="hb-line block w-[22px] h-[2px] bg-[#1B3A5C] rounded-full transition-all duration-300 origin-center"></span>
+        <span class="hb-line block w-[22px] h-[2px] bg-[#1B3A5C] rounded-full transition-all duration-300"></span>
+        <span class="hb-line block w-[22px] h-[2px] bg-[#1B3A5C] rounded-full transition-all duration-300 origin-center"></span>
+      </button>
+    </div>
+
+  </div>
+
+  <!-- Mobile menu — slides down -->
+  <div
+    id="mobile-menu"
+    class="md:hidden overflow-hidden"
+    style="max-height: 0; transition: max-height 0.32s ease-in-out;"
+  >
+    <div class="border-t border-[#E8E4DE] bg-[#FAF8F5] px-5 py-4 flex flex-col gap-1">
+
+      <a href="/" class="mob-link flex items-center px-4 py-3.5 rounded-xl text-[#2C2C2C] hover:bg-[#1B3A5C]/8 hover:text-[#1B3A5C] font-medium text-sm transition-colors">
+        მთავარი
+      </a>
+
+      <a href="/courses/mental-arithmetic" class="mob-link flex items-center gap-2.5 px-4 py-3.5 rounded-xl text-[#1B3A5C] bg-[#1B3A5C]/6 hover:bg-[#1B3A5C]/12 font-medium text-sm transition-colors">
+        <div class="w-2 h-2 rounded-full bg-[#1B3A5C] flex-shrink-0"></div>
+        მენტალური არითმეტიკა
+      </a>
+
+      <a href="/courses/emotional-intelligence" class="mob-link flex items-center gap-2.5 px-4 py-3.5 rounded-xl text-[#6B2040] bg-[#6B2040]/6 hover:bg-[#6B2040]/12 font-medium text-sm transition-colors">
+        <div class="w-2 h-2 rounded-full bg-[#6B2040] flex-shrink-0"></div>
+        ემოციური ინტელექტი
+      </a>
+
+      <!-- ჩვენ შესახებ accordion -->
+      <div>
+        <button
+          id="mob-about-btn"
+          class="w-full flex items-center justify-between px-4 py-3.5 rounded-xl text-[#2C2C2C] hover:bg-[#1B3A5C]/8 hover:text-[#1B3A5C] font-medium text-sm transition-colors"
+        >
+          ჩვენ შესახებ
+          <svg id="mob-about-chevron" class="w-4 h-4 text-[#6B6B6B] flex-shrink-0 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+          </svg>
+        </button>
+        <div id="mob-about-sub" class="overflow-hidden pl-3" style="max-height: 0; transition: max-height 0.2s ease-in-out;">
+          <a href="/about" class="mob-link flex items-center gap-3 px-4 py-3 rounded-xl text-sm text-[#2C2C2C] hover:bg-[#1B3A5C]/8 hover:text-[#1B3A5C] transition-colors font-medium">
+            <div class="w-7 h-7 bg-[#1B3A5C]/10 rounded-lg flex items-center justify-center flex-shrink-0">
+              <svg class="w-3.5 h-3.5 text-[#1B3A5C]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+            </div>
+            რა არის ნობელი?
+          </a>
+          <a href="/events" class="mob-link flex items-center gap-3 px-4 py-3 rounded-xl text-sm text-[#2C2C2C] hover:bg-[#1B3A5C]/8 hover:text-[#1B3A5C] transition-colors font-medium">
+            <div class="w-7 h-7 bg-[#4A7C59]/10 rounded-lg flex items-center justify-center flex-shrink-0">
+              <svg class="w-3.5 h-3.5 text-[#4A7C59]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+              </svg>
+            </div>
+            ღონისძიებები
+          </a>
+          <a href="/blog" class="mob-link flex items-center gap-3 px-4 py-3 rounded-xl text-sm text-[#2C2C2C] hover:bg-[#1B3A5C]/8 hover:text-[#1B3A5C] transition-colors font-medium">
+            <div class="w-7 h-7 bg-[#2E6DA4]/10 rounded-lg flex items-center justify-center flex-shrink-0">
+              <svg class="w-3.5 h-3.5 text-[#2E6DA4]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+              </svg>
+            </div>
+            ბლოგი
+          </a>
+        </div>
+      </div>
+
+      <a href="/contact" class="mob-link flex items-center px-4 py-3.5 rounded-xl text-[#2C2C2C] hover:bg-[#1B3A5C]/8 hover:text-[#1B3A5C] font-medium text-sm transition-colors">
+        კონტაქტი
+      </a>
+
+      <div class="h-px bg-[#E8E4DE] my-2"></div>
+
+      <!-- CTA -->
+      <a href="/trial-class" class="mob-link flex items-center justify-center bg-[#C0392B] text-white px-6 py-3.5 rounded-xl font-semibold text-sm hover:bg-[#A93226] transition-all">
+        უფასო საცდელი გაკვეთილი →
+      </a>
+
+      <!-- Phone numbers -->
+      <div class="flex flex-col gap-1 pt-1 pb-2">
+        <a href="tel:+995551145362" class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-[#E8E4DE] transition-colors group">
+          <svg class="w-4 h-4 flex-shrink-0 text-[#C0392B]" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/>
+          </svg>
+          <span class="text-sm font-medium text-[#2C2C2C] group-hover:text-[#1B3A5C] transition-colors">+995 551 145 362</span>
+        </a>
+        <a href="tel:+995551145360" class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-[#E8E4DE] transition-colors group">
+          <svg class="w-4 h-4 flex-shrink-0 text-[#C0392B]" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/>
+          </svg>
+          <span class="text-sm font-medium text-[#2C2C2C] group-hover:text-[#1B3A5C] transition-colors">+995 551 145 360</span>
+        </a>
+      </div>
+
+    </div>
   </div>
 </nav>
+
+<!-- Backdrop -->
+<div
+  id="mobile-backdrop"
+  class="fixed inset-0 bg-black/40 z-40 hidden md:hidden"
+  style="opacity: 0; transition: opacity 0.3s;"
+></div>
+
+<script>
+  const btn = document.getElementById('hamburger-btn');
+  const menu = document.getElementById('mobile-menu') as HTMLElement;
+  const backdrop = document.getElementById('mobile-backdrop') as HTMLElement;
+  const lines = document.querySelectorAll<HTMLElement>('.hb-line');
+  const aboutBtn = document.getElementById('mob-about-btn');
+  const aboutSub = document.getElementById('mob-about-sub') as HTMLElement;
+  const aboutChevron = document.getElementById('mob-about-chevron') as HTMLElement;
+  const mobLinks = document.querySelectorAll('.mob-link');
+
+  let isOpen = false;
+  let aboutOpen = false;
+
+  function openMenu() {
+    isOpen = true;
+    menu.style.maxHeight = '600px';
+    backdrop.classList.remove('hidden');
+    requestAnimationFrame(() => { backdrop.style.opacity = '1'; });
+    document.body.style.overflow = 'hidden';
+    lines[0].style.transform = 'translateY(7px) rotate(45deg)';
+    lines[1].style.opacity = '0';
+    lines[2].style.transform = 'translateY(-7px) rotate(-45deg)';
+    btn?.setAttribute('aria-expanded', 'true');
+  }
+
+  function closeMenu() {
+    isOpen = false;
+    menu.style.maxHeight = '0';
+    backdrop.style.opacity = '0';
+    setTimeout(() => backdrop.classList.add('hidden'), 300);
+    document.body.style.overflow = '';
+    lines[0].style.transform = '';
+    lines[1].style.opacity = '';
+    lines[2].style.transform = '';
+    btn?.setAttribute('aria-expanded', 'false');
+    if (aboutOpen) closeAbout();
+  }
+
+  function openAbout() {
+    aboutOpen = true;
+    aboutSub.style.maxHeight = aboutSub.scrollHeight + 'px';
+    aboutChevron.style.transform = 'rotate(180deg)';
+  }
+
+  function closeAbout() {
+    aboutOpen = false;
+    aboutSub.style.maxHeight = '0';
+    aboutChevron.style.transform = '';
+  }
+
+  btn?.addEventListener('click', () => isOpen ? closeMenu() : openMenu());
+  backdrop?.addEventListener('click', closeMenu);
+  aboutBtn?.addEventListener('click', () => aboutOpen ? closeAbout() : openAbout());
+  mobLinks.forEach(l => l.addEventListener('click', closeMenu));
+</script>
